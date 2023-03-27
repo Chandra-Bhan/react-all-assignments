@@ -1,0 +1,67 @@
+.loginContainer {
+    background-color: #4d79ff;
+    height: 100vh;
+}
+
+.formDiv {
+    width: 20rem;
+    height: 10rem;
+    margin-top: 1rem;
+    margin-left: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    padding: 10rem 10rem;
+    background-color: white;
+    padding-top: 200px;
+
+}
+
+input {
+    padding: 15px;
+    font-size: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+a {
+    font-size: 20px;
+    margin-left: 70px;
+}
+
+button {
+    border: none;
+    font-size: 25px;
+    padding: 15px 30px;
+    background-color: #295bef;
+    border-radius: 50px;
+    font-weight: bold;
+    color: wheat;
+    margin-left: 130px;
+    margin-top: 10px;
+}
+
+.mainRegIcon {
+
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    position: relative;
+    top: 110px;
+}
+
+.mainRegIconInnerDiv {
+    background-color: blue;
+    border: 2px solid;
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.mainLogImageInnerDiv {
+    overflow: hidden;
+    border-radius: 50%;
+}

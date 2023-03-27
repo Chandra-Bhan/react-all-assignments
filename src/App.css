@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+
+ul li a.active{
+  color:blue;
+  font-size: 2rem;
+  font-weight: bold;
+}
