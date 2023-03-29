@@ -1,0 +1,24 @@
+nav{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    background-color: aliceblue;
+
+}
+ul{
+    list-style-type:none;
+    margin-top: 40px;
+   
+}
+ul li{
+    display: inline;
+    margin-right: 2rem;
+}
+ul li a{
+    font-size: 30px;
+    text-decoration: none;
+}
+h4{
+    font-size: 30px;
+    opacity: 50%;
+}
