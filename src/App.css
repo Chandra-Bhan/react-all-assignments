@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+ul li{
+  font-size: 40px;
+  list-style-type:none;
+}
+
+button{
+  font-size: 30px;
+  border: none;
+  background-color: aqua;
+  padding: 30px;
+  font-weight: bold;
+  border-radius: 40px;
+  color: white;
+}
+button:hover{
+  background-color: #61dafb;
+}
