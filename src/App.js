@@ -1,12 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-import EventInvokeTime from './Assignment2/EventInvokeTime';
+import Greeting from './greetings/Greeting';
+
 
 function App() {
   return (
     <div className="App">
       
-      <EventInvokeTime/>
+      <Greeting/>
+   
     </div>
   );
 }
