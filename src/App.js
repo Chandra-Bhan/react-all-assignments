@@ -1,12 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import EventInvokeTime from './Assignment2/EventInvokeTime';
+import Form from './components/Form/Form';
 
 function App() {
   return (
     <div className="App">
-      
-      <EventInvokeTime/>
+     <Form/>
     </div>
   );
 }
