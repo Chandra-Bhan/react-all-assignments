@@ -37,48 +37,42 @@
   }
 }
 
+table{
+  border-collapse: collapse;
+margin: 2%;
 
-.mainDiv{
-  display: flex;
-  border: 2px solid;
-  background-color: #61dafb;
-  justify-content:center;
- 
 }
-h1{
-  background-color: tomato;
-  padding: 10px 100px;
-}
-h2{
-  background-color: blue;
-  padding: 10px 100px;
-}
-.dummyDiv{
-  background-color: greenyellow;
-  padding: 10px 100px;
+table tr th{
   font-size: 30px;
+  border: 5px solid #3366ff;
+  background-color: #3366ff;
+  color: white;
+  
+
+
 }
 table tr td{
-  border: 5px solid rgb(39, 180, 39);
-  padding: 10px 50px;
-  font-size: 30px;
-  
-  
-}
-
-thead tr td{
+  font-size: 25px;
+  border: 5px solid #3366ff;
   font-weight: bold;
-  background-color: black;
-  color: white;
+  padding: 5px;
+  color: rgb(203, 133, 47);
 }
-
-table{
-  margin: auto;
+span{
+  cursor: pointer;
 }
-label{
+h1{
   font-size: 40px;
-  font-weight: bold;
+  color: teal;
 }
-h3{
+h2{
+  color: tomato;
   font-size: 30px;
+}
+label {
+  font-size: x-large;
+}
+.checkBox{
+  width: 30px;
+  height: 30px;
 }

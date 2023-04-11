@@ -1,12 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import EventInvokeTime from './Assignment2/EventInvokeTime';
+import PostDataTable from './components/PostDataTable';
 
 function App() {
   return (
     <div className="App">
-      
-      <EventInvokeTime/>
+      <PostDataTable/>
     </div>
   );
 }
