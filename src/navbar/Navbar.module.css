@@ -1,0 +1,11 @@
+a{
+    font-size: 40px;
+    margin-right: 50px;
+    font-weight: bold;
+    border: 5px solid rebeccapurple;
+    padding: 20px;
+}
+
+div{
+    margin-top: 100px;
+}
