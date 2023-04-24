@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { todosSlice } from "..";
+import styles from "./Todos.module.css";
 
 function Todos() {
   const [input, setInput] = useState("");
@@ -16,20 +17,46 @@ function Todos() {
     }
     console.log(tasks);
   };
+  const hanldeToggle = (id) => {
+    dispatch(todosSlice.actions.toggleTask(id));
+  };
+  const handleDelete = (id) => {
+    dispatch(todosSlice.actions.deleteTask(id));
+  };
 
   return (
-    <div>
+    <div className={styles.todoContainer}>
+      <h1>Redux Assingment 1</h1>
       <h1>Todo List</h1>
       <input
         type="text"
         value={input}
-        onChange={(e) => hasSelectionSupport(e.target.value)}
+        onChange={(e) => setInput(e.target.value)}
         name=""
         id=""
       />
       <button type="submit" onClick={handleSubmit}>
         Add
       </button>
+      <ul>
+        {tasks.map((task) => (
+          <li>
+            <input
+              type="checkbox"
+              checked={task.completed}
+              onChange={() => hanldeToggle(task.id)}
+            />
+            <span
+              style={{
+                textDecoration: task.completed ? "line-through" : "none",
+              }}
+            >
+              {task.title}
+            </span>
+            <button onClick={() => handleDelete(task.id)}>Delete</button>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

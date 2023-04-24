@@ -1,0 +1,35 @@
+ul{
+    list-style-type: none;
+}
+.todoContainer{
+    border: 10px solid rgb(25, 25, 158);
+}
+button{
+    font-size: 20px;
+    padding: 5px 20px;
+    margin-left: 10px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(45, 83, 83);
+    border-radius: 50px;
+}
+ul li{
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: tomato;
+}
+input[type=text]{
+    font-size: 20px;
+    padding: 5px ;
+    border-color: aqua;
+}
+input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+ border-color: blueviolet;
+}
+h1{
+    color: blueviolet;
+    text-decoration: underline;
+}
