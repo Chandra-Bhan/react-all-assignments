@@ -1,10 +1,37 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { configureStore, createSlice } from "@reduxjs/toolkit";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const buttons = [];
+for (let i = 65; i < 91; i++) {
+  buttons.push({ name: String.fromCharCode(i) });
+}
+
+export const btnSlice = createSlice({
+  name: "btnSlice",
+  initialState: {
+    value: buttons.map((button) => ({ name: button.name, count: 0 })),
+  },
+  reducers: {
+    addData: (state, action) => {
+      // console.log("hello", action.payload);
+      const { name, count } = action.payload;
+      const tempData = state.value.find((button) => button.name == name);
+      tempData.count = tempData.count + 1;
+    },
+  },
+});
+
+export const store = configureStore({
+  reducer: {
+    [btnSlice.name]: btnSlice.reducer,
+  },
+});
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
